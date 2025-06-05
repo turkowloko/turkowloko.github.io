@@ -1,4 +1,4 @@
-/* Reset/Normalize Básico (Opcional, mas bom para consistência) */
+/* Reset/Normalize Básico */
 *,
 *::before,
 *::after {
@@ -9,73 +9,82 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px; /* Base para REMs */
+    font-size: 16px;
 }
 
 body {
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.7;
-    color: #4a4a4a; /* Cinza escuro suave para texto principal */
-    background-color: #f9fafb; /* Fundo muito levemente acinzentado */
+    color: #4a4a4a;
+    background-color: #f9fafb;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
     width: 90%;
-    max-width: 980px; /* Um pouco mais largo para conteúdo */
+    max-width: 860px; 
     margin: 0 auto;
     padding: 40px 20px;
 }
 
 /* --- Tipografia e Cabeçalhos --- */
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 700;
     line-height: 1.3;
-    color: #2c3e50; /* Azul escuro/acinzentado para títulos */
-    margin-bottom: 0.75rem; /* 12px */
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
 }
 
-h1 { /* Título principal da página (do Markdown) */
-    font-size: 2.75rem; /* 44px */
+h1 {
+    font-size: 2.5rem; 
     text-align: center;
-    margin-bottom: 2rem; /* 32px */
-    padding-bottom: 0.5rem; /* 8px */
-    border-bottom: 3px solid #3498db; /* Azul mais vibrante para o sublinhado do H1 */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #3498db;
     letter-spacing: -0.5px;
 }
 
-h2 { /* Títulos de Seção */
-    font-size: 2rem; /* 32px */
-    margin-top: 3rem; /* 48px - Mais espaço entre seções */
-    margin-bottom: 1.5rem; /* 24px */
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0; /* Linha sutil abaixo do H2 */
+h1 + h3 { 
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400; 
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 2.5rem; 
 }
 
-h3 { /* Subtítulos de Projeto */
-    font-size: 1.5rem; /* 24px */
-    color: #34495e; /* Um tom ligeiramente mais claro de azul/cinza */
+
+h2 {
+    font-size: 1.875rem; 
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h3 { 
+    font-size: 1.4rem; 
+    color: #34495e;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 p {
-    margin-bottom: 1.25rem; /* 20px */
-    font-size: 1rem; /* 16px */
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
 }
 
 a {
-    color: #3498db; /* Azul vibrante para links */
+    color: #3498db;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 a:hover, a:focus {
-    color: #2980b9; /* Azul um pouco mais escuro no hover */
-    text-decoration: none; /* Remova o sublinhado se preferir, ou adicione */
+    color: #2980b9;
 }
 
 ul, ol {
@@ -84,7 +93,7 @@ ul, ol {
 }
 
 li {
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem;
 }
 
 strong, b {
@@ -100,82 +109,135 @@ hr {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(44, 62, 80, 0.35), rgba(0, 0, 0, 0));
-    margin: 3rem 0; /* 48px */
+    margin: 3rem 0;
 }
-
 
 /* --- Seções e Elementos Específicos --- */
-
-.project-section {
-    padding: 1.5rem; /* 24px */
-    margin-bottom: 2rem; /* 32px */
-    background-color: #ffffff; /* Fundo branco para seções de projeto */
+.project-section { 
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
-/* Adicione esta classe aos divs que envolvem cada "projeto" no seu index.md se quiser caixas separadas
-   Ex: <div class="project-section"> ### Meu Projeto ... </div>
-   Se não, o H2 já fará a separação visual principal.
-*/
 
-/* Imagens */
+/* Imagens Individuais (não em galeria) */
 img {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
     display: block;
-    margin: 1rem auto 1.5rem auto; /* 16px cima, 24px baixo */
+    margin: 1rem auto 1.5rem auto; 
     border-radius: 6px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
-/* Galeria de Imagens */
+.project-showcase-image-smaller { 
+    max-width: 300px !important; 
+    margin-left: 0; 
+    margin-right: auto;
+}
+
+
+/* Logo do Sanatorio */
+.sanatorio-logo {
+    max-width: 300px; 
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: none;
+}
+
+/* Galeria de Imagens (Layout Base) */
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* 16px */
-    justify-content: center;
+    gap: 1rem; 
+    justify-content: flex-start; 
     margin-bottom: 1.5rem;
+    max-width: 100%; 
 }
 
-.image-gallery img {
-    /* Ajuste flex-basis para controlar quantas imagens por linha */
-    flex-basis: calc(33.333% - 1rem); /* 3 por linha, com gap */
-    min-width: 180px; /* Tamanho mínimo para evitar que fiquem muito pequenas */
-    margin: 0; /* Remover margem padrão se estiver dentro da galeria */
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer, pode cortar */
-    /* Se quiser que a imagem caiba toda, use object-fit: contain; e defina uma altura para o contêiner da imagem */
+/* Estilo para imagens em galerias genéricas (Kurumin, BRABO, etc.) - 2 por linha */
+.image-gallery img { 
+    flex-basis: calc(50% - 0.5rem); /* 2 por linha (0.5rem é metade do gap) */
+    min-width: 200px; /* Um bom tamanho mínimo */
+    max-width: 320px; /* Aumentado para imagens maiores de 2 por linha */
+    margin: 0; 
+    object-fit: cover;
+    height: 180px; /* Aumentado para imagens maiores */
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
-/* Imagens de Showcase de Projetos (se usadas individualmente) */
-.project-showcase-image {
-    max-width: 350px; /* Um pouco maior para destaque individual */
+/* Estilo específico para imagens do Sanatorio WIP DENTRO de uma .image-gallery */
+/* Faz cada imagem do Sanatorio ocupar a linha inteira na galeria */
+.image-gallery .sanatorio-showcase-image {
+    flex-basis: 100%; 
+    min-width: 200px; 
+    max-width: 650px; 
+    height: auto;     
+    margin-bottom: 1rem; 
+    border: 2px solid #3498db; 
+    padding: 2px;
+    background-color: #fff;
+}
+.image-gallery .sanatorio-showcase-image:last-child {
+    margin-bottom: 0;
 }
 
-/* Imagens de Showcase do Novo Sanatorio (ainda maior destaque) */
-.sanatorio-showcase-image {
-    max-width: 100%; /* Ocupar mais espaço se for uma imagem principal da seção */
-    border: 3px solid #3498db; /* Borda de destaque mais proeminente */
-    padding: 3px; /* Pequeno espaçamento interno */
-    background-color: #fff; /* Fundo para a borda interna */
+
+/* Videos Responsivos */
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+    position: relative;
+    height: 0;
+    margin: 1.5rem 0; 
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    max-width: 680px; 
+}
+
+.video-responsive.video-4-3 { 
+    padding-bottom: 75%;
+    max-width: 600px; 
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
 }
 
 /* Ícones de Tecnologia */
 .tech-icons {
-    text-align: center; /* Centralizar os ícones */
+    text-align: center; 
     margin-bottom: 2rem;
 }
-.tech-icons p a img, /* Mantendo o seletor original, caso você já tenha usado <p> */
-.tech-icons a img { /* Adicionando seletor mais direto se não houver <p> */
+.tech-icons a img {
     display: inline-block;
-    margin: 0.5rem; /* 8px */
+    margin: 0.5rem;
     box-shadow: none;
-    border-radius: 4px; /* Levemente arredondado para ícones */
+    border-radius: 4px;
     vertical-align: middle;
     transition: transform 0.2s ease-in-out;
 }
 .tech-icons a:hover img {
-    transform: scale(1.1); /* Efeito de zoom no hover */
+    transform: scale(1.1);
+}
+
+/* Destaque para links externos importantes */
+.external-link-highlight { 
+    font-size: 1.05em;
+    margin-top: 1rem;
+    display: block; 
+    text-align: left; 
+}
+.external-link-highlight a {
+    font-weight: bold;
 }
 
 
@@ -186,7 +248,7 @@ footer {
     margin-top: 3rem;
     border-top: 1px solid #e0e0e0;
     font-size: 0.9rem;
-    color: #7f8c8d; /* Cinza suave para o rodapé */
+    color: #7f8c8d;
 }
 footer p {
     margin-bottom: 0.5rem;
@@ -199,46 +261,86 @@ footer a:hover {
 }
 
 /* --- Responsividade --- */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Tablets e menores */
     html {
-        font-size: 15px; /* Reduzir um pouco a base da fonte */
+        font-size: 15px;
     }
     .container {
         width: 95%;
         padding: 20px 15px;
     }
     h1 {
-        font-size: 2.25rem; /* 36px */
+        font-size: 2rem; 
+    }
+    h1 + h3 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
     h2 {
-        font-size: 1.75rem; /* 28px */
+        font-size: 1.6rem; 
     }
-    .image-gallery img {
-        flex-basis: calc(50% - 0.75rem); /* 2 por linha */
-        min-width: 150px;
+    .image-gallery img { /* Galerias genéricas em tablet */
+        flex-basis: calc(50% - 0.5rem); /* Mantém 2 por linha se couber */
+        height: auto; 
+        min-width: 130px; 
     }
-    .project-section {
-        padding: 1rem;
+    .image-gallery .sanatorio-showcase-image { /* Sanatorio em mobile */
+        flex-basis: 100%; 
+        height: auto; 
+    }
+    .sanatorio-logo {
+        max-width: 240px;
+    }
+    .video-responsive, .image-gallery, img, .project-showcase-image-smaller { 
+        max-width: 100%; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .project-showcase-image-smaller {
+         margin-left: 0; 
+         margin-right: auto;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* Celulares */
     html {
         font-size: 14px;
     }
     h1 {
-        font-size: 1.875rem; /* 30px */
+        font-size: 1.75rem; 
+    }
+    h1 + h3 {
+        font-size: 1rem;
     }
     h2 {
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.4rem; 
     }
-    .image-gallery img {
+    .image-gallery img, /* Todas as imagens de galeria em celular */
+    .image-gallery .sanatorio-showcase-image {
         flex-basis: 100%; /* 1 por linha */
-        min-width: unset;
+        height: auto; 
     }
     .tech-icons a img {
-        width: 30px; /* Reduzir um pouco os ícones de tecnologia */
+        width: 30px;
         height: 30px;
         margin: 0.3rem;
     }
+    .sanatorio-logo {
+        max-width: 180px;
+    }
+}
+/* Estilo específico para imagens na galeria do BRABO - 1 por linha, grande */
+.image-gallery.brabo-gallery img {
+    flex-basis: 100%; /* Cada imagem do BRABO ocupa a linha inteira */
+    min-width: 200px; /* Ainda relevante para responsividade */
+    max-width: 650px; /* Permitir que fiquem grandes, mas não mais que o container da galeria */
+    height: auto;     /* Altura automática para manter a proporção */
+    margin-bottom: 1rem; /* Espaço abaixo de cada imagem grande do BRABO */
+    /* Você pode adicionar uma borda ou outro destaque se quiser, similar ao sanatorio-showcase-image */
+    /* Ex: border: 2px solid #algumaCor; */
+}
+
+/* Remove a última margem inferior para a última imagem do BRABO na galeria */
+.image-gallery.brabo-gallery img:last-child {
+    margin-bottom: 0;
 }

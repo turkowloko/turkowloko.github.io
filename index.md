@@ -1,16 +1,43 @@
 ---
 # Layout e SEO
 layout: default
-title: Gustavo 'TurkowLoKo' Bolanho - Portfolio & Sanatorio Dev Journey
-description: Dive into the development of "Sanatorio" and the journey of Gustavo 'TurkowLoKo' Bolanho, a programmer turned Game Developer, Digital Artist & Animator.
+title: Gustavo 'TurkowLoKo' Bolanho - Technical Artist & Game Developer
+description: Portfolio of Gustavo 'TurkowLoKo' Bolanho, a Technical Artist and Game Developer based in São Paulo - Brazil, showcasing the solo development of "Sanatorio" (UE5), past projects, and a versatile skill set bridging art and code. Available for relocation.
 ---
 
-# Gustavo 'TurkowLoKo' Bolanho - Game Developer, Digital Artist & Animator
+# Gustavo 'TurkowLoKo' Bolanho
+<h3 style="text-align: center;">Technical Artist & Game Developer</h3>
 
 ## About Me
 
-Hi, I'm Gustavo! I'm a programmer at heart who truly **loves to code**. My journey in software development began at age 12, starting with VB6 and .NET, which naturally guided me towards C# and, subsequently, the Unity Engine. Over time, my passion for creating interactive experiences led me to gradually evolve into a **Generalist Digital Artist and Animator**. I've dived deep into various game engines, always driven by a desire to understand technology from core systems programming to crafting compelling visual elements and animations. I thrive on learning and applying this broad skill set to bring virtual worlds and characters to life, with my current focus culminating in the ambitious solo project, "Sanatorio."
+Hi, I'm Gustavo! My journey into game development began with a deep love for **programming**, spanning over two decades since I started coding at age 12 with VB.NET and the .NET framework. This strong coding foundation naturally led me to C# and engines like Unity. My passion for not just building game systems but also for crafting the visual and interactive elements themselves guided me to become a **Technical Artist**. I thrive on bridging the gap between art and code, developing tools, pipelines, shaders, and VFX, while also engaging in modeling, animation, and overall visual creation. My experience with Linux (Debian-based) since 2010 also shapes my development approach.
 
+I am fluent in **English** and my native **Portuguese**, with intermediate proficiency in **Spanish** and basic knowledge of **French**. Currently based near São Paulo - **Brazil**, I am open and available for relocation opportunities.
+
+My current endeavor, the solo development of the horror game "Sanatorio" in UE5, is where I synthesize all these skills – from core programming to detailed artistic execution.
+
+---
+---
+
+## Sanatorio: The Current Solo Endeavor (UE5)
+
+![](images/sanatorio_new_logo.png){:class="sanatorio-logo"}
+
+"Sanatorio" is more than just a game project for me; it's the **central focus of my current creative and technical efforts**, a deeply personal endeavor where I'm channeling years of accumulated knowledge. Revisiting this concept, which first sparked my passion for game development, I am now meticulously crafting its modern incarnation using **Unreal Engine 5**. This is a solo mission: I've transformed my room into a dedicated development studio, pouring 10-12 hours daily into every facet of "Sanatorio"—from programming complex systems and designing intricate gameplay mechanics to modeling environments, creating characters, animating, and implementing visual effects.
+
+This intense dedication is fueled by a profound passion to realize a singular vision. For me, working on "Sanatorio" is also a vital means of achieving mental balance and constructively channeling my creative drive. My objective is to build a compelling, polished, and immersive horror experience that not only stands as a testament to my capabilities as a solo developer but also resonates deeply with players. I am leveraging the full spectrum of my skills as a programmer, generalist artist, and animator to bring this world to life.
+
+**Dive Deeper into Sanatorio's Development:**
+
+*   **Technical Insights & Progress:** [Sanatorio on IndieDB](https://indiedb.com/games/sanatorio)
+*   **Visual Glimpses (Work in Progress):**
+    <div class="image-gallery">
+    <img src="images/sanatorio_new_1.png" alt="Sanatorio WIP 1" class="sanatorio-showcase-image" />
+    <img src="images/sanatorio_new_2.png" alt="Sanatorio WIP 2" class="sanatorio-showcase-image" />
+    <img src="images/sanatorio_new_3.png" alt="Sanatorio WIP 3" class="sanatorio-showcase-image" />
+    </div>
+
+---
 ---
 
 ## My Journey & Past Projects: Building the Foundation
@@ -19,7 +46,7 @@ The projects below represent key milestones in my learning and skill development
 
 ### The Early Days: Foundations in Programming (Pre-2011)
 
-My programming journey began with **VB6 (Basic)** and the **.NET universe**, pivotal for my later work with C# in game engines.
+My programming journey began with **VB.NET (Basic)** and the **.NET universe**, pivotal for my later work with C# in game engines.
 
 -   **Circa 2008: 3D Game Studio & Lite-C**
     -   First game engine experience, learning scripting with **Lite-C**.
@@ -34,8 +61,10 @@ Discovering **Unity (v2.5)** during my Computer Science studies ignited a passio
     -   Implemented 3D character physics, inventory, and weapon switching from scratch.
     -   An incredible lesson in **resilience** and self-driven learning.
     -   **Showcase (Original 2011 Version):**
-        -   ![Sanatorio on Vimeo (2011)](images/sanatorio_vimeo.png)
-        -   [Watch "Sanatorio" early footage on Vimeo (2011)](https://vimeo.com/17611817)
+        -   <img src="images/sanatorio_vimeo.png" alt="Sanatorio on Vimeo (2011)" class="project-showcase-image-smaller"/>
+        <div class="video-responsive video-4-3 vimeo-embed">
+            <iframe src="https://player.vimeo.com/video/17611817?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Sanatorio beta"></iframe>
+        </div>
 
 ### Venturing into UDK & Unreal Engine 4
 
@@ -45,70 +74,95 @@ Exploration of the **Unreal Development Kit (UDK)** with **Kismet** deepened my 
 -   **Hackathon & Professional Experience (Chile):** Worked at an indie studio creating educational experiences in UE4.
 -   **FPS Project for BGS 2016 (Brazil):** Programmer for an FPS showcased at Brasil Game Show.
     -   **Showcase:**
-        -   ![FPS Project at BGS 2016](images/bgs_2016_fps.png)
-        -   [Watch BGS 2016 Showcase (relevant part at 15:50)](https://www.youtube.com/watch?v=DKmbD95Y_SJQ&t=950s)
+        -   <img src="images/bgs_2016_fps.png" alt="FPS Project at BGS 2016" class="project-showcase-image-smaller"/>
+        *(Previously linked video is no longer available)*
 -   **Niagara VFX:** Developed robust visual effects with Unreal's Niagara system.
     -   **Showcase (Gore VFX):**
-        -   ![Niagara Gore VFX](images/niagara_gore_vfx.png)
-        -   [My first attempt to create gore VFX in Niagara (Reddit)](https://www.reddit.com/r/unrealengine/comments/el3q15/my_first_attempt_to_create_gore_vfx_in_niagara/)
+        -   <img src="images/niagara_gore_vfx.png" alt="Niagara Gore VFX" class="project-showcase-image-smaller"/>
+        -   *(Link to Reddit post: [My first attempt to create gore VFX in Niagara](https://www.reddit.com/r/unrealengine/comments/el3q15/my_first_attempt_to_create_gore_vfx_in_niagara/))*
 
-### Mastering Unreal Engine 5 & Other Engines
+### Mastering Unreal Engine 5
 
-**UE5** marked a new level of professional output, alongside explorations in **Godot Engine**.
+**UE5** marked a new level of professional output with the following projects:
 
 -   **Project: "Kurumin" (Ambitious Indie Game - UE5)**
     -   Full development workflow: Blender (modeling, texturing, rigging, animation) & UE5 (animation/gameplay programming with Metahumans).
     -   **Showcase:**
-        -   ![Kurumin Workflow 1](images/kurumin_metahumans_1.png) ![Kurumin Workflow 2](images/kurumin_metahumans_2.png) ![Kurumin Workflow 3](images/kurumin_metahumans_3.png)
+        <div class="image-gallery brabo-gallery">
+        <img src="images/kurumin_metahumans_1.png" alt="Kurumin Workflow 1" />
+        <img src="images/kurumin_metahumans_2.png" alt="Kurumin Workflow 2" />
+        <img src="images/kurumin_metahumans_3.png" alt="Kurumin Workflow 3" />
+        </div>
         -   [WIP - Kurumin: Indie Workflow with Metahumans and UE5 (UE Forums)](https://forums.unrealengine.com/t/wip-kurumin-my-indie-workflow-with-metahumans-and-ue5/512685)
-        -   [Kurumin Devlog Playlist (YouTube)](https://www.youtube.com/playlist?list=PL8UTE4vASGJusTj80VZpIWWC_77uqntiV)
+        -   Kurumin Devlog Playlist:
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8UTE4vASGJusTj80VZpIWWC_77uqntiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
 -   **Project: "BRABO" (Tech Showcase - UE5)**
     -   Tutorial-focused project using Lumen, Nanite, & PCG.
     -   **Showcase:**
-        -   ![BRABO Scene 1](images/brabo_pcg_1.png) ![BRABO Scene 2](images/brabo_pcg_2.png) ![BRABO Scene 3](images/brabo_pcg_3.png)
-        -   [BRABO Devlog Playlist (YouTube)](https://www.youtube.com/playlist?list=PL8UTE4vASGJsvkMIQIdtukKnkYzkpf-Cr)
--   **Godot Engine Projects:**
-    -   **"Potato Boom" & "Taxi Flight" (Android Games):** Explored GDScript, Java integration, procedural audio, and unique 2D-like rendering from 3D assets.
-        -   ![Potato Boom Gameplay](images/potato_boom_android.png) [Video 1](https://youtu.be/QhM5Dqi3QC8) | [Video 2](https://youtu.be/kNpCl0Iv4BU)
-        -   ![Taxi Flight Gameplay](images/taxi_flight_android.png) [Video](https://youtu.be/Ny-8m5UZ0sw)
-    -   **"Project: Extractor" & "CS.EXE" (3D Studies):** Deep dived into Godot's 3D capabilities, GLTF, GLSL, YarnSpinner, and Jolt Physics.
-        -   ![Project Extractor Scene](images/project_extractor_1.png) [Video](https://youtu.be/PIY6XN2tCqQ)
-        -   ![CS.EXE Scene](images/cs_exe_1.png) [Video 1](https://youtu.be/JZ7JWlMzPqY) | [Video 2](https://youtu.be/niAXOqzixpk) | [Itch.io](https://gbolanho.itch.io/csexe)
+        <div class="image-gallery brabo-gallery">
+        <img src="images/brabo_pcg_1.png" alt="BRABO Scene 1" />
+        <img src="images/brabo_pcg_2.png" alt="BRABO Scene 2" />
+        <img src="images/brabo_pcg_3.png" alt="BRABO Scene 3" />
+        </div>
+        -   BRABO Devlog Playlist:
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8UTE4vASGJsvkMIQIdtukKnkYzkpf-Cr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 
 ---
----
 
-## Sanatorio: The Current Solo Endeavor (UE5)
+## Explorations in Godot Engine & Mobile Development
 
-"Sanatorio" is more than just a game project for me; it's the **central focus of my current creative and technical efforts**, a deeply personal endeavor where I'm channeling years of accumulated knowledge. Revisiting this concept, which first sparked my passion for game development, I am now meticulously crafting its modern incarnation using **Unreal Engine 5**. This is a solo mission: I've transformed my room into a dedicated development studio, pouring 10-12 hours daily into every facet of "Sanatorio"—from programming complex systems and designing intricate gameplay mechanics to modeling environments, creating characters, animating, and implementing visual effects.
+My curiosity also led me to explore **Godot Engine**, particularly for its open-source nature and capabilities in 2D, 3D, and mobile development on Linux.
 
-This intense dedication is fueled by a profound passion to realize a singular vision. For me, working on "Sanatorio" is also a vital means of achieving mental balance and constructively channeling my creative drive. My objective is to build a compelling, polished, and immersive horror experience that not only stands as a testament to my capabilities as a solo developer but also resonates deeply with players. I am leveraging the full spectrum of my skills as a programmer, generalist artist, and animator to bring this world to life.
+-   **"Potato Boom" & "Taxi Flight" (Android Games):** Explored GDScript, Java integration for Google Play Games SDK, procedural audio, and unique 2D-like rendering from 3D assets.
+    -   **Potato Boom:**
+        <img src="images/potato_boom_android.png" alt="Potato Boom Gameplay" class="project-showcase-image-smaller"/>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QhM5Dqi3QC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kNpCl0Iv4BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    -   **Taxi Flight:**
+        <img src="images/taxi_flight_android.png" alt="Taxi Flight Gameplay" class="project-showcase-image-smaller"/>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ny-8m5UZ0sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 
-
--
--
--
-
-* ![](images/sanatorio_new_logo.png)
-
-**Dive Deeper into Sanatorio's Development:**
-
-*   **Technical Insights & Progress:** [Sanatorio on IndieDB](https://indiedb.com/games/sanatorio)
-*   **Visual Glimpses (Work in Progress):**
-    *   ![Sanatorio WIP 1](images/sanatorio_new_1.png)
-    *   ![Sanatorio WIP 2](images/sanatorio_new_2.png)
-    *   ![Sanatorio WIP 3](images/sanatorio_new_3.png)
-    *(Replace mockups with actual image paths when ready)*
-
+-   **"Project: Extractor" & "CS.EXE" (3D Studies in Godot):** Deep dived into Godot's 3D capabilities, GLTF workflow with Blender, GLSL shaders, storytelling with YarnSpinner, and third-party physics integration (Jolt Physics).
+    -   **Project: Extractor:**
+        <div class="image-gallery">
+        <img src="images/project_extractor_1.png" alt="Project Extractor Scene 1" />
+        <img src="images/project_extractor_2.png" alt="Project Extractor Scene 2" />
+        </div>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PIY6XN2tCqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    -   **CS.EXE:**
+        <div class="image-gallery">
+        <img src="images/cs_exe_1.png" alt="CS.EXE Scene 1" />
+        <img src="images/cs_exe_2.png" alt="CS.EXE Scene 2" />
+        </div>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JZ7JWlMzPqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/niAXOqzixpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p class="external-link-highlight">[More info on CS.EXE (Itch.io)](https://gbolanho.itch.io/csexe)</p>
 ---
 ---
 
 ## The Generalist Advantage: Crafting "Sanatorio"
 
-The diverse journey through various technologies and roles—from pure programming to 3D art and animation—has equipped me with a comprehensive **generalist skill set**. This breadth of experience is invaluable, especially for an ambitious solo project like "Sanatorio." It allows me to:
+The diverse journey through various technologies and roles—from pure programming to 3D art and animation—has equipped me with a comprehensive **generalist skill set as a Technical Artist**. This breadth of experience is invaluable, especially for an ambitious solo project like "Sanatorio." It allows me to:
 
-*   **Architect and Implement Robust Systems:** My programming foundation (C++, Blueprints, GDScript) enables me to build complex gameplay mechanics, AI, and underlying game systems efficiently.
-*   **Create Cohesive Visuals:** Skills in modeling (Blender), texturing, lighting, VFX (Niagara), and animation ensure that the artistic vision for "Sanatorio" is realized consistently.
+*   **Architect and Implement Robust Systems:** My programming foundation (C++, Blueprints, GDScript, C#) enables me to build complex gameplay mechanics, AI, and underlying game systems efficiently.
+*   **Create Cohesive Visuals:** Skills in modeling (Blender), texturing, lighting, VFX (Niagara), and animation ensure that the artistic vision for "Sanatorio" is realized consistently. My explorations with Krita, GIMP, Inkscape, color theory, and animation principles further support this.
 *   **Optimize the Entire Pipeline:** Understanding both the artistic and technical sides helps in creating efficient workflows and optimized assets, crucial for performance.
 *   **Develop Custom Tools:** I can (and love to) create scripts and editor utilities to automate repetitive tasks and streamline the development process, making solo development more manageable.
 *   **Solve Problems Holistically:** A generalist perspective means I can anticipate and resolve challenges that span multiple disciplines, ensuring smoother development.
@@ -119,9 +173,11 @@ This portfolio showcases the evolution of these skills, all of which are now bei
 
 ## Broader Tech Stack & Software Engineering Skills
 
-While "Sanatorio" and game development are my current prime focus, my love for programming extends to a wide array of technologies used in various software engineering projects. This broader foundation in software architecture and development practices enriches my approach to game creation.
+While "Sanatorio" and game development are my current prime focus, my love for programming extends to a wide array of technologies. My professional background is rooted in **.NET development for Windows**, and I've cultivated a strong preference for **Linux (Debian-based distributions)** since 2010 for my personal and professional projects whenever feasible.
 
-### Languages and Tools:
+I have significant experience as a **full-stack developer using Python with the Django framework**, having delivered and maintained websites for various clients, including an educational institution, a therapist, and a social project. This involved front-end work (HTML, CSS, JavaScript, Bootstrap) and back-end logic, database management (MySQL, PostgreSQL), and API integration. I've also worked with **Java (notably with Eclipse Scout)**. These experiences have provided me with a solid foundation in web technologies, database architecture, and delivering complete software solutions. My later dive into Godot projects also spurred a deeper engagement with open-source digital art tools like **Krita, GIMP, Blender, and Inkscape**, complementing my technical skills with a growing artistic toolkit.
+
+### Visualized Tech Stack:
 
 <p align="left" class="tech-icons">
   <a href="https://developer.android.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="35" height="35"/></a>
