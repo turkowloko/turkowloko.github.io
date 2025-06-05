@@ -1,0 +1,244 @@
+/* Reset/Normalize Básico (Opcional, mas bom para consistência) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base para REMs */
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.7;
+    color: #4a4a4a; /* Cinza escuro suave para texto principal */
+    background-color: #f9fafb; /* Fundo muito levemente acinzentado */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 90%;
+    max-width: 980px; /* Um pouco mais largo para conteúdo */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- Tipografia e Cabeçalhos --- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2c3e50; /* Azul escuro/acinzentado para títulos */
+    margin-bottom: 0.75rem; /* 12px */
+}
+
+h1 { /* Título principal da página (do Markdown) */
+    font-size: 2.75rem; /* 44px */
+    text-align: center;
+    margin-bottom: 2rem; /* 32px */
+    padding-bottom: 0.5rem; /* 8px */
+    border-bottom: 3px solid #3498db; /* Azul mais vibrante para o sublinhado do H1 */
+    letter-spacing: -0.5px;
+}
+
+h2 { /* Títulos de Seção */
+    font-size: 2rem; /* 32px */
+    margin-top: 3rem; /* 48px - Mais espaço entre seções */
+    margin-bottom: 1.5rem; /* 24px */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0; /* Linha sutil abaixo do H2 */
+}
+
+h3 { /* Subtítulos de Projeto */
+    font-size: 1.5rem; /* 24px */
+    color: #34495e; /* Um tom ligeiramente mais claro de azul/cinza */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1rem; /* 16px */
+}
+
+a {
+    color: #3498db; /* Azul vibrante para links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+    color: #2980b9; /* Azul um pouco mais escuro no hover */
+    text-decoration: none; /* Remova o sublinhado se preferir, ou adicione */
+}
+
+ul, ol {
+    margin-bottom: 1.25rem;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+strong, b {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+em, i {
+    font-style: italic;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(44, 62, 80, 0.35), rgba(0, 0, 0, 0));
+    margin: 3rem 0; /* 48px */
+}
+
+
+/* --- Seções e Elementos Específicos --- */
+
+.project-section {
+    padding: 1.5rem; /* 24px */
+    margin-bottom: 2rem; /* 32px */
+    background-color: #ffffff; /* Fundo branco para seções de projeto */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+/* Adicione esta classe aos divs que envolvem cada "projeto" no seu index.md se quiser caixas separadas
+   Ex: <div class="project-section"> ### Meu Projeto ... </div>
+   Se não, o H2 já fará a separação visual principal.
+*/
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto 1.5rem auto; /* 16px cima, 24px baixo */
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Galeria de Imagens */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 16px */
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.image-gallery img {
+    /* Ajuste flex-basis para controlar quantas imagens por linha */
+    flex-basis: calc(33.333% - 1rem); /* 3 por linha, com gap */
+    min-width: 180px; /* Tamanho mínimo para evitar que fiquem muito pequenas */
+    margin: 0; /* Remover margem padrão se estiver dentro da galeria */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer, pode cortar */
+    /* Se quiser que a imagem caiba toda, use object-fit: contain; e defina uma altura para o contêiner da imagem */
+}
+
+/* Imagens de Showcase de Projetos (se usadas individualmente) */
+.project-showcase-image {
+    max-width: 350px; /* Um pouco maior para destaque individual */
+}
+
+/* Imagens de Showcase do Novo Sanatorio (ainda maior destaque) */
+.sanatorio-showcase-image {
+    max-width: 100%; /* Ocupar mais espaço se for uma imagem principal da seção */
+    border: 3px solid #3498db; /* Borda de destaque mais proeminente */
+    padding: 3px; /* Pequeno espaçamento interno */
+    background-color: #fff; /* Fundo para a borda interna */
+}
+
+/* Ícones de Tecnologia */
+.tech-icons {
+    text-align: center; /* Centralizar os ícones */
+    margin-bottom: 2rem;
+}
+.tech-icons p a img, /* Mantendo o seletor original, caso você já tenha usado <p> */
+.tech-icons a img { /* Adicionando seletor mais direto se não houver <p> */
+    display: inline-block;
+    margin: 0.5rem; /* 8px */
+    box-shadow: none;
+    border-radius: 4px; /* Levemente arredondado para ícones */
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+.tech-icons a:hover img {
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+
+/* Rodapé */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Cinza suave para o rodapé */
+}
+footer p {
+    margin-bottom: 0.5rem;
+}
+footer a {
+    color: #7f8c8d;
+}
+footer a:hover {
+    color: #3498db;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px; /* Reduzir um pouco a base da fonte */
+    }
+    .container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 2.25rem; /* 36px */
+    }
+    h2 {
+        font-size: 1.75rem; /* 28px */
+    }
+    .image-gallery img {
+        flex-basis: calc(50% - 0.75rem); /* 2 por linha */
+        min-width: 150px;
+    }
+    .project-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.875rem; /* 30px */
+    }
+    h2 {
+        font-size: 1.5rem; /* 24px */
+    }
+    .image-gallery img {
+        flex-basis: 100%; /* 1 por linha */
+        min-width: unset;
+    }
+    .tech-icons a img {
+        width: 30px; /* Reduzir um pouco os ícones de tecnologia */
+        height: 30px;
+        margin: 0.3rem;
+    }
+}

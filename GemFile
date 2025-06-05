@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 4.2" # Ou a versão que você instalou/deseja
+gem "jekyll-seo-tag"
+# Adicione aqui outros plugins Jekyll que você usar
+# Se estiver usando um tema do GitHub Pages, pode precisar dele aqui,
+# mas como estamos customizando, talvez não seja necessário.
+# Ex: gem "minima", "~> 2.5"

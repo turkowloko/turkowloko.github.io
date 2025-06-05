@@ -1,0 +1,46 @@
+# Site settings
+title: Gustavo 'TurkowLoKo' Bolanho - Portfolio & Sanatorio Dev Journey
+description: Dive into the development of "Sanatorio" and the journey of Gustavo 'TurkowLoKo' Bolanho, a programmer turned Game Developer, Digital Artist & Animator.
+baseurl: "" # a sub-pasta do seu site, e.g. /blog. Deixe vazio se for a raiz do domínio.
+url: "https://turkowloko.github.io" # seu domínio base
+author: Gustavo 'TurkowLoKo' Bolanho
+
+# GitHub Profile info (opcional, pode ser usado no layout)
+github_username: gbolanho
+turkowloko_github_username: turkowloko
+twitter_username: gustavobolanho
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Theme (vamos usar nosso próprio CSS, então o tema é menos crítico, mas alguns arquivos base podem vir dele)
+# theme: minima # Exemplo, pode remover ou deixar um tema base simples
+# Se você não especificar um tema, o Jekyll usará um padrão bem básico ou nenhum.
+# Para controle total, é melhor não depender muito de um tema.
+
+# Plugins (jekyll-seo-tag é bom para metadados automáticos)
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal list.
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
