@@ -1,30 +1,36 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- A tag title virá do front matter do index.md ou do _config.yml via jekyll-seo-tag -->
-     {% seo %} <!-- Isso é do plugin jekyll-seo-tag, adiciona meta tags e título otimizados -->
-     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-     <!-- Adicione aqui links para fontes do Google Fonts se quiser, etc. -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
+{% include google-analytics.html %}
 
- </head>
- <body>
-     <header>
-         <!-- Poderíamos ter um cabeçalho fixo ou menu aqui no futuro -->
-         <!-- Por enquanto, o título principal virá do H1 no index.md -->
-     </header>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho pode ser adicionado aqui no futuro -->
+    </header>
 
-     <main class="container">
-         {{ content }}
-     </main>
+    <main class="container">
+        {{ content }}
+    </main>
 
-     <footer>
-         <p>© {{ site.time | date: '%Y' }} Gustavo 'TurkowLoKo' Bolanho. All rights reserved.</p>
-         <!-- Adicionar links sociais aqui se desejado, usando site.github_username etc. do _config.yml -->
-     </footer>
- </body>
- </html>
+    <footer>
+        <p>© <span id="currentYear"></span> Gustavo 'TurkowLoKo' Bolanho. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Script para mostrar o ano atual no rodapé
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

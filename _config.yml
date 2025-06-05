@@ -10,6 +10,9 @@ github_username: gbolanho
 turkowloko_github_username: turkowloko
 twitter_username: gustavobolanho
 
+# Google Analytics
+google_analytics_id: "G-QP7XG10DFX" # SUBSTITUA PELO SEU ID DA MÉTRICA
+
 # Build settings
 markdown: kramdown
 kramdown:
